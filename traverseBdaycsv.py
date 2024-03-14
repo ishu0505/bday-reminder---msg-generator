@@ -11,7 +11,6 @@ def importCSV():
 
         bdays = list(dict_reader)
 
-        print(bdays)
         return bdays
 def getTodayBday():
     bdaysArr = importCSV() # using import csv function to get array of objects contaning bdays
@@ -23,7 +22,6 @@ def getTodayBday():
             todayBdays.append(bday)
 
 
-    print(todayBdays)
     return todayBdays # returns an array containing all the bdays that are today
 
 

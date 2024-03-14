@@ -11,8 +11,13 @@ from traverseBdaycsv import *
 if __name__ == '__main__':
     todayBirthday = getTodayBday()
     msg = curateMail(todayBirthday)
-    sendMail(msg)
-    print(('mail sent'))
+    if(msg):
+        print('here is msg')
+        sendMail(msg)
+        print(('mail sent'))
+    else:
+        print('no msg')
+
 
 
 
